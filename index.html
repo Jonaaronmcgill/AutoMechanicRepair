@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>24 Hour Mobile Mechanics | Expert Auto Repair at Your Door</title>
+    <title>24 Hour Mobile Mechanic | Fort Worth Auto Repair</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
         
-        :root {
-            --primary: #1e40af;
-        }
+        html { scroll-behavior: smooth; }
         
         .hero-bg {
             background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
@@ -44,13 +42,9 @@
         .nav-link:hover:after {
             width: 100%;
         }
-        
-        .tail-container {
-            font-family: 'Inter', system_ui, sans-serif;
-        }
     </style>
 </head>
-<body class="tail-container bg-zinc-950 text-zinc-200">
+<body class="bg-zinc-950 text-zinc-200 font-sans">
     <!-- NAVBAR -->
     <nav class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
@@ -59,23 +53,23 @@
                     ⚙️
                 </div>
                 <div>
-                    <span class="font-bold text-2xl tracking-tighter">GEARUP</span>
-                    <span class="text-blue-400 text-sm block -mt-1">MOBILE MECHANICS</span>
+                    <span class="font-bold text-2xl tracking-tighter">24 HOUR</span>
+                    <span class="text-blue-400 text-sm block -mt-1">MOBILE MECHANIC</span>
                 </div>
             </div>
             
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#services" onclick="smoothScrollTo('services')" class="nav-link text-zinc-300 hover:text-white">Services</a>
-                <a href="#about" onclick="smoothScrollTo('about')" class="nav-link text-zinc-300 hover:text-white">About</a>
-                <a href="#testimonials" onclick="smoothScrollTo('testimonials')" class="nav-link text-zinc-300 hover:text-white">Reviews</a>
-                <a href="#contact" onclick="smoothScrollTo('contact')" class="nav-link text-zinc-300 hover:text-white">Contact</a>
+                <a href="#services" class="nav-link text-zinc-300 hover:text-white">Services</a>
+                <a href="#about" class="nav-link text-zinc-300 hover:text-white">About</a>
+                <a href="#testimonials" class="nav-link text-zinc-300 hover:text-white">Reviews</a>
+                <a href="#contact" class="nav-link text-zinc-300 hover:text-white">Contact</a>
             </div>
             
             <div class="flex items-center gap-4">
-                <a href="tel:555-123-4567" 
+                <a href="tel:8176960349" 
                    class="hidden sm:flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-5 py-2.5 rounded-2xl text-sm font-semibold transition">
                     <i class="fas fa-phone"></i>
-                    <span>(555) 123-4567</span>
+                    <span>(817) 696-0349</span>
                 </a>
                 <button onclick="showBookingModal()"
                         class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-2xl font-semibold flex items-center gap-2 transition">
@@ -83,24 +77,9 @@
                     BOOK NOW
                 </button>
                 
-                <!-- Mobile menu -->
-                <button id="mobile-menu-btn" 
-                        class="md:hidden text-2xl p-2">
+                <button id="mobile-menu-btn" class="md:hidden text-2xl p-2">
                     <i class="fas fa-bars"></i>
                 </button>
-            </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-t border-zinc-800 py-4">
-            <div class="flex flex-col px-6 gap-4 text-lg">
-                <a href="#services" onclick="toggleMobileMenu()" class="py-2">Services</a>
-                <a href="#about" onclick="toggleMobileMenu()" class="py-2">About Us</a>
-                <a href="#testimonials" onclick="toggleMobileMenu()" class="py-2">Reviews</a>
-                <a href="#contact" onclick="toggleMobileMenu()" class="py-2">Contact</a>
-                <a href="tel:555-123-4567" class="py-2 flex items-center gap-3">
-                    <i class="fas fa-phone text-blue-400"></i> (555) 123-4567
-                </a>
             </div>
         </div>
     </nav>
@@ -111,373 +90,114 @@
             <div class="max-w-2xl">
                 <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm mb-6">
                     <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                    Serving the Greater Metro Area • Same Day Service
+                    Fort Worth & Surrounding Cities • 24/7 Service
                 </div>
                 
                 <h1 class="text-6xl md:text-7xl font-bold leading-none tracking-tighter mb-6">
-                    AUTO REPAIR<br>THAT COMES TO <span class="text-blue-400">YOU</span>
+                    MOBILE AUTO REPAIR<br>THAT COMES TO <span class="text-blue-400">YOU</span>
                 </h1>
                 
-                <p class="text-xl text-zinc-300 mb-10 max-w-md">
-                    Certified mobile mechanics. Honest diagnostics. 
-                    Quality repairs at your home, office, or roadside.
+                <p class="text-xl text-zinc-300 mb-10">
+                    Affordable, reliable mobile mechanic services in Fort Worth and surrounding areas.
                 </p>
                 
                 <div class="flex flex-wrap gap-4">
                     <button onclick="showBookingModal()" 
-                            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-3xl font-semibold text-lg flex items-center gap-3 transition shadow-xl shadow-blue-900/50">
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-3xl font-semibold text-lg flex items-center gap-3 transition">
                         <i class="fas fa-calendar-check"></i>
                         SCHEDULE SERVICE
                     </button>
                     
-                    <a href="#services" 
-                       onclick="smoothScrollTo('services')"
-                       class="border border-white/70 hover:bg-white/10 px-8 py-4 rounded-3xl font-semibold text-lg flex items-center gap-3 transition">
-                        SEE OUR SERVICES
+                    <a href="#services" class="border border-white/70 hover:bg-white/10 px-8 py-4 rounded-3xl font-semibold text-lg flex items-center gap-3 transition">
+                        SEE SERVICES
                     </a>
                 </div>
-                
-                <div class="mt-12 flex items-center gap-8 text-sm">
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-check-circle text-green-400"></i>
-                        <span>ASE Certified</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-check-circle text-green-400"></i>
-                        <span>90-Day Warranty</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-check-circle text-green-400"></i>
-                        <span>5-Star Rated</span>
-                    </div>
-                </div>
             </div>
-        </div>
-        
-        <div class="absolute bottom-10 left-1/2 hidden md:flex flex-col items-center text-xs tracking-widest">
-            <div class="animate-bounce">SCROLL FOR MORE</div>
-            <i class="fas fa-chevron-down mt-2"></i>
         </div>
     </header>
-
-    <!-- TRUST BAR -->
-    <div class="bg-zinc-900 py-6 border-b border-zinc-800">
-        <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-8 text-sm opacity-75">
-            <div class="flex items-center gap-3">
-                <i class="fas fa-tools text-2xl"></i>
-                <div>
-                    <div class="font-semibold">Fully Equipped Vans</div>
-                    <div class="text-xs">Tools &amp; Parts Onboard</div>
-                </div>
-            </div>
-            <div class="flex items-center gap-3">
-                <i class="fas fa-shield-alt text-2xl"></i>
-                <div>
-                    <div class="font-semibold">Insured &amp; Bonded</div>
-                    <div class="text-xs">$2M Liability</div>
-                </div>
-            </div>
-            <div class="flex items-center gap-3">
-                <i class="fas fa-clock text-2xl"></i>
-                <div>
-                    <div class="font-semibold">Mon-Sat • 7am-7pm</div>
-                    <div class="text-xs">Emergency Service Available</div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- SERVICES -->
     <section id="services" class="py-24 bg-zinc-950">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <div class="inline-flex items-center gap-2 bg-blue-950 text-blue-400 text-sm font-medium px-5 py-2 rounded-full">
-                    <i class="fas fa-wrench"></i>
-                    OUR SERVICES
-                </div>
-                <h2 class="text-5xl font-bold mt-4 tracking-tight">Expert Care for Your Vehicle</h2>
-                <p class="mt-3 text-zinc-400 max-w-md mx-auto">
-                    From routine maintenance to complex repairs — we handle it all, right where you are.
-                </p>
+                <h2 class="text-5xl font-bold tracking-tighter">Our Services</h2>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service Cards -->
-                <div class="service-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
-                    <div class="h-52 bg-zinc-800 flex items-center justify-center text-7xl">🛢️</div>
-                    <div class="p-8">
-                        <h3 class="font-semibold text-2xl mb-2">Oil Change &amp; Maintenance</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
-                            Full synthetic, conventional, or high-mileage oil changes. 
-                            Filter replacements and fluid top-offs.
-                        </p>
-                        <div class="text-blue-400 font-medium">$89+</div>
-                    </div>
+                <div class="service-card bg-zinc-900 rounded-3xl p-8 border border-zinc-800">
+                    <div class="text-6xl mb-6">🛢️</div>
+                    <h3 class="text-2xl font-semibold mb-3">Oil Changes & Maintenance</h3>
+                    <p class="text-zinc-400">Full synthetic, conventional, and high-mileage oil changes.</p>
                 </div>
-                
-                <div class="service-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
-                    <div class="h-52 bg-zinc-800 flex items-center justify-center text-7xl">🛞</div>
-                    <div class="p-8">
-                        <h3 class="font-semibold text-2xl mb-2">Tire Services</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
-                            Flat tire repair, rotations, balancing, new tire installation, 
-                            and pressure checks.
-                        </p>
-                        <div class="text-blue-400 font-medium">$35+</div>
-                    </div>
+                <div class="service-card bg-zinc-900 rounded-3xl p-8 border border-zinc-800">
+                    <div class="text-6xl mb-6">🛞</div>
+                    <h3 class="text-2xl font-semibold mb-3">Tire Services</h3>
+                    <p class="text-zinc-400">Flat repairs, rotations, balancing, and new tire installation.</p>
                 </div>
-                
-                <div class="service-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
-                    <div class="h-52 bg-zinc-800 flex items-center justify-center text-7xl">🔋</div>
-                    <div class="p-8">
-                        <h3 class="font-semibold text-2xl mb-2">Battery &amp; Electrical</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
-                            Battery testing, replacement, alternator diagnosis, 
-                            starter repair, and wiring fixes.
-                        </p>
-                        <div class="text-blue-400 font-medium">$69+</div>
-                    </div>
+                <div class="service-card bg-zinc-900 rounded-3xl p-8 border border-zinc-800">
+                    <div class="text-6xl mb-6">🔋</div>
+                    <h3 class="text-2xl font-semibold mb-3">Battery & Electrical</h3>
+                    <p class="text-zinc-400">Battery replacement, alternator, starter, and wiring repairs.</p>
                 </div>
-                
-                <div class="service-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
-                    <div class="h-52 bg-zinc-800 flex items-center justify-center text-7xl">🛑</div>
-                    <div class="p-8">
-                        <h3 class="font-semibold text-2xl mb-2">Brake Repair</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
-                            Pads, rotors, calipers, and full brake system service.
-                        </p>
-                        <div class="text-blue-400 font-medium">$149+</div>
-                    </div>
+                <div class="service-card bg-zinc-900 rounded-3xl p-8 border border-zinc-800">
+                    <div class="text-6xl mb-6">🛑</div>
+                    <h3 class="text-2xl font-semibold mb-3">Brake Repair</h3>
+                    <p class="text-zinc-400">Pads, rotors, calipers, and complete brake system service.</p>
                 </div>
-                
-                <div class="service-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
-                    <div class="h-52 bg-zinc-800 flex items-center justify-center text-7xl">🔧</div>
-                    <div class="p-8">
-                        <h3 class="font-semibold text-2xl mb-2">Diagnostics &amp; Check Engine</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
-                            OBD-II scanning, fault code reading, and precise troubleshooting.
-                        </p>
-                        <div class="text-blue-400 font-medium">$89</div>
-                    </div>
+                <div class="service-card bg-zinc-900 rounded-3xl p-8 border border-zinc-800">
+                    <div class="text-6xl mb-6">🔧</div>
+                    <h3 class="text-2xl font-semibold mb-3">Diagnostics</h3>
+                    <p class="text-zinc-400">Check engine light, OBD scanning, and accurate troubleshooting.</p>
                 </div>
-                
-                <div class="service-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
-                    <div class="h-52 bg-zinc-800 flex items-center justify-center text-7xl">❄️</div>
-                    <div class="p-8">
-                        <h3 class="font-semibold text-2xl mb-2">A/C &amp; Cooling System</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
-                            Recharge, leak repair, radiator service, and thermostat replacement.
-                        </p>
-                        <div class="text-blue-400 font-medium">$119+</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <button onclick="showBookingModal()" 
-                        class="text-blue-400 hover:text-blue-300 font-medium flex items-center gap-2 mx-auto">
-                    VIEW ALL SERVICES 
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="py-24 bg-zinc-900">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
-            <div class="md:col-span-5">
-                <img src="https://picsum.photos/id/1015/800/900" 
-                     alt="Mobile Mechanic Van"
-                     class="rounded-3xl shadow-2xl">
-            </div>
-            
-            <div class="md:col-span-7">
-                <div class="uppercase tracking-widest text-blue-400 text-sm font-medium mb-3">EST. 2018</div>
-                <h2 class="text-5xl font-bold leading-none tracking-tighter mb-8">
-                    Your Trusted Neighborhood Mechanic
-                </h2>
-                
-                <div class="prose prose-zinc prose-invert max-w-none text-lg">
-                    <p class="text-zinc-300">
-                        GearUp Mobile Mechanics was founded with a simple mission: 
-                        bring professional, transparent auto repair directly to our customers.
-                    </p>
-                    <p class="text-zinc-300">
-                        All our technicians are ASE certified with over 10 years of experience. 
-                        We use the latest diagnostic equipment and source quality OEM and aftermarket parts.
-                    </p>
-                </div>
-                
-                <div class="grid grid-cols-2 gap-8 mt-12">
-                    <div>
-                        <div class="text-5xl font-mono font-bold text-blue-400">500+</div>
-                        <div class="text-sm uppercase tracking-wider">Happy Customers Every Month</div>
-                    </div>
-                    <div>
-                        <div class="text-5xl font-mono font-bold text-blue-400">4.98</div>
-                        <div class="text-sm uppercase tracking-wider">Average Rating</div>
-                    </div>
-                </div>
-                
-                <div class="mt-12 flex items-center gap-4">
-                    <div class="flex -space-x-4">
-                        <div class="w-9 h-9 bg-zinc-700 border-2 border-zinc-900 rounded-full flex items-center justify-center text-xs">👨‍🔧</div>
-                        <div class="w-9 h-9 bg-zinc-700 border-2 border-zinc-900 rounded-full flex items-center justify-center text-xs">👩‍🔧</div>
-                    </div>
-                    <div class="text-sm leading-tight">
-                        <div class="font-medium">Mike &amp; Sarah Thompson</div>
-                        <div class="text-zinc-400">Owners &amp; Master Technicians</div>
-                    </div>
+                <div class="service-card bg-zinc-900 rounded-3xl p-8 border border-zinc-800">
+                    <div class="text-6xl mb-6">❄️</div>
+                    <h3 class="text-2xl font-semibold mb-3">A/C & Cooling</h3>
+                    <p class="text-zinc-400">Recharge, leak repair, radiator, and thermostat service.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" class="py-24 bg-zinc-950">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-5xl font-bold tracking-tighter">What Our Customers Say</h2>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-zinc-900 p-8 rounded-3xl">
-                    <div class="flex gap-1 text-yellow-400 mb-6">
-                        ★★★★☆
-                    </div>
-                    <p class="italic text-zinc-300">"Saved me from a tow truck! Changed my alternator in my driveway in under 90 minutes. Fair price and super professional."</p>
-                    <div class="mt-8 flex items-center gap-3">
-                        <div class="w-10 h-10 bg-zinc-700 rounded-2xl"></div>
-                        <div>
-                            <div class="font-medium">Carlos Rivera</div>
-                            <div class="text-xs text-zinc-400">2024 Toyota Camry</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-zinc-900 p-8 rounded-3xl">
-                    <div class="flex gap-1 text-yellow-400 mb-6">
-                        ★★★★★
-                    </div>
-                    <p class="italic text-zinc-300">"Best decision I ever made. They came same day for my daughter's car. Fixed the AC and even gave us maintenance tips. 10/10."</p>
-                    <div class="mt-8 flex items-center gap-3">
-                        <div class="w-10 h-10 bg-zinc-700 rounded-2xl"></div>
-                        <div>
-                            <div class="font-medium">Maria Gonzalez</div>
-                            <div class="text-xs text-zinc-400">2022 Honda CR-V</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-zinc-900 p-8 rounded-3xl">
-                    <div class="flex gap-1 text-yellow-400 mb-6">
-                        ★★★★★
-                    </div>
-                    <p class="italic text-zinc-300">"Diagnosed my check engine light in 20 minutes. Replaced a $15 sensor instead of the $800 part the dealership wanted. Honest mechanics exist!"</p>
-                    <div class="mt-8 flex items-center gap-3">
-                        <div class="w-10 h-10 bg-zinc-700 rounded-2xl"></div>
-                        <div>
-                            <div class="font-medium">James Patel</div>
-                            <div class="text-xs text-zinc-400">2019 Ford F-150</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA BANNER -->
-    <div class="bg-gradient-to-r from-blue-700 to-blue-900 py-16">
-        <div class="max-w-4xl mx-auto text-center px-6">
-            <h2 class="text-4xl font-bold mb-4">Ready to Get Your Car Fixed?</h2>
-            <p class="text-blue-100 text-xl mb-8">Most services completed same day. No shop visit required.</p>
-            <button onclick="showBookingModal()" 
-                    class="bg-white text-blue-900 px-10 py-5 rounded-3xl font-semibold text-xl hover:bg-zinc-100 transition flex items-center gap-4 mx-auto">
-                <span>BOOK YOUR SERVICE NOW</span>
-                <i class="fas fa-arrow-right"></i>
-            </button>
-        </div>
-    </div>
 
     <!-- CONTACT -->
     <section id="contact" class="py-24 bg-zinc-900">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16">
                 <div>
-                    <h2 class="text-5xl font-bold tracking-tighter mb-8">Get In Touch</h2>
+                    <h2 class="text-5xl font-bold tracking-tighter mb-8">Contact Us</h2>
                     
-                    <div class="space-y-8">
-                        <div class="flex gap-5">
-                            <i class="fas fa-map-marker-alt text-3xl text-blue-400 mt-1"></i>
+                    <div class="space-y-10">
+                        <div class="flex gap-6">
+                            <i class="fas fa-map-marker-alt text-4xl text-blue-400 mt-1"></i>
                             <div>
-                                <div class="font-semibold">Service Area</div>
-                                <div class="text-zinc-400">Greater Metro Area &amp; surrounding suburbs (30-mile radius)</div>
+                                <div class="font-semibold text-xl">1218 Northwest 25th Street</div>
+                                <div class="text-zinc-400">Fort Worth, TX, USA</div>
+                                <a href="https://maps.google.com" target="_blank" class="text-blue-400 hover:underline text-sm mt-2 inline-block">
+                                    Get Directions →
+                                </a>
                             </div>
                         </div>
                         
-                        <div class="flex gap-5">
-                            <i class="fas fa-phone text-3xl text-blue-400 mt-1"></i>
+                        <div class="flex gap-6">
+                            <i class="fas fa-phone text-4xl text-blue-400 mt-1"></i>
                             <div>
-                                <div class="font-semibold">(555) 123-4567</div>
-                                <div class="text-zinc-400">Call or text anytime</div>
+                                <a href="tel:8176960349" class="font-semibold text-3xl hover:text-blue-400 transition">(817) 696-0349</a>
+                                <div class="text-zinc-400 mt-1">Call or Text • 24/7</div>
                             </div>
-                        </div>
-                        
-                        <div class="flex gap-5">
-                            <i class="fas fa-envelope text-3xl text-blue-400 mt-1"></i>
-                            <div>
-                                <div class="font-semibold">hello@gearupmobile.com</div>
-                                <div class="text-zinc-400">We reply within 1 hour</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-16">
-                        <div class="text-sm uppercase tracking-widest mb-3">Follow Us</div>
-                        <div class="flex gap-6 text-3xl">
-                            <i class="fab fa-facebook hover:text-blue-400 cursor-pointer"></i>
-                            <i class="fab fa-instagram hover:text-blue-400 cursor-pointer"></i>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Contact Form -->
                 <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-10">
                     <form id="contact-form" onsubmit="handleSubmit(event)">
                         <div class="grid grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-xs uppercase tracking-widest mb-2">First Name</label>
-                                <input type="text" id="fname" required
-                                       class="w-full bg-zinc-900 border border-zinc-700 focus:border-blue-400 rounded-2xl px-5 py-4 outline-none">
-                            </div>
-                            <div>
-                                <label class="block text-xs uppercase tracking-widest mb-2">Last Name</label>
-                                <input type="text" id="lname" required
-                                       class="w-full bg-zinc-900 border border-zinc-700 focus:border-blue-400 rounded-2xl px-5 py-4 outline-none">
-                            </div>
+                            <input type="text" placeholder="First Name" required class="bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4">
+                            <input type="text" placeholder="Last Name" required class="bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4">
                         </div>
+                        <input type="tel" placeholder="Phone Number" required class="mt-6 w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4">
+                        <input type="text" placeholder="Vehicle Year, Make, Model" class="mt-6 w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4">
+                        <textarea placeholder="Describe the problem..." rows="5" class="mt-6 w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-5 py-4"></textarea>
                         
-                        <div class="mt-6">
-                            <label class="block text-xs uppercase tracking-widest mb-2">Phone Number</label>
-                            <input type="tel" id="phone" required
-                                   class="w-full bg-zinc-900 border border-zinc-700 focus:border-blue-400 rounded-2xl px-5 py-4 outline-none">
-                        </div>
-                        
-                        <div class="mt-6">
-                            <label class="block text-xs uppercase tracking-widest mb-2">Vehicle Details (Year, Make, Model)</label>
-                            <input type="text" id="vehicle" 
-                                   class="w-full bg-zinc-900 border border-zinc-700 focus:border-blue-400 rounded-2xl px-5 py-4 outline-none">
-                        </div>
-                        
-                        <div class="mt-6">
-                            <label class="block text-xs uppercase tracking-widest mb-2">Describe the Issue</label>
-                            <textarea id="message" rows="5"
-                                      class="w-full bg-zinc-900 border border-zinc-700 focus:border-blue-400 rounded-3xl px-5 py-4 outline-none resize-none"></textarea>
-                        </div>
-                        
-                        <button type="submit"
-                                class="mt-8 w-full bg-blue-600 hover:bg-blue-700 py-6 rounded-3xl font-semibold text-lg transition">
+                        <button type="submit" class="mt-8 w-full bg-blue-600 hover:bg-blue-700 py-6 rounded-3xl font-semibold text-lg">
                             SEND MESSAGE
                         </button>
                     </form>
@@ -487,98 +207,37 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-black py-16">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <div class="flex justify-center mb-8">
-                <div class="flex items-center gap-3">
-                    <div class="w-9 h-9 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-3xl">⚙️</div>
-                    <span class="font-bold text-3xl tracking-tighter">GEARUP</span>
-                </div>
-            </div>
-            
-            <p class="text-zinc-500 text-sm">
-                © 2026 GearUp Mobile Mechanics. All Rights Reserved.<br>
-                Licensed • Insured • ASE Certified Technicians
+    <footer class="bg-black py-12 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-2xl font-bold tracking-tighter">24 Hour Mobile Mechanic</p>
+            <p class="text-zinc-500 mt-2">Fort Worth, TX • Serving Surrounding Cities</p>
+            <p class="text-zinc-500 mt-6 text-sm">
+                © 2026 24 Hour Mobile Mechanic • (817) 696-0349
             </p>
-            
-            <div class="mt-8 text-xs text-zinc-600">
-                This is a demo website generated by Grok
-            </div>
         </div>
     </footer>
 
     <!-- BOOKING MODAL -->
-    <div id="booking-modal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-[100] flex items-center justify-center">
-        <div class="bg-zinc-900 w-full max-w-lg mx-4 rounded-3xl overflow-hidden">
-            <div class="p-8">
-                <div class="flex justify-between items-center mb-8">
-                    <h3 class="text-3xl font-bold">Book Service</h3>
-                    <button onclick="hideBookingModal()" class="text-3xl leading-none text-zinc-400 hover:text-white">×</button>
-                </div>
-                
-                <div class="space-y-6">
-                    <div>
-                        <label class="block text-sm mb-2">Preferred Date</label>
-                        <input type="date" id="modal-date" 
-                               class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-5 py-4">
-                    </div>
-                    
-                    <div>
-                        <label class="block text-sm mb-2">Service Needed</label>
-                        <select id="modal-service" 
-                                class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-5 py-4">
-                            <option>Oil Change</option>
-                            <option>Brake Service</option>
-                            <option>Diagnostics</option>
-                            <option>Tire Repair</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-sm mb-2">Your Phone Number</label>
-                        <input type="tel" id="modal-phone" placeholder="(555) 123-4567"
-                               class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-5 py-4">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-t border-zinc-700 bg-zinc-950 p-8 flex gap-4">
-                <button onclick="hideBookingModal()" 
-                        class="flex-1 py-5 border border-zinc-700 hover:bg-zinc-800 rounded-3xl font-medium">
-                    CANCEL
-                </button>
-                <button onclick="submitBooking()" 
-                        class="flex-1 py-5 bg-blue-600 hover:bg-blue-700 rounded-3xl font-semibold">
-                    CONFIRM BOOKING
-                </button>
-            </div>
+    <div id="booking-modal" class="hidden fixed inset-0 bg-black/80 z-[100] flex items-center justify-center">
+        <div class="bg-zinc-900 w-full max-w-md mx-4 rounded-3xl p-8">
+            <h3 class="text-3xl font-bold mb-6">Book Service</h3>
+            <input type="date" id="modal-date" class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-5 py-4 mb-4">
+            <select id="modal-service" class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-5 py-4 mb-6">
+                <option>Oil Change</option>
+                <option>Brake Service</option>
+                <option>Diagnostics</option>
+                <option>Tire Repair</option>
+                <option>Other</option>
+            </select>
+            <button onclick="submitBooking()" class="w-full bg-blue-600 py-5 rounded-3xl font-semibold mb-3">CONFIRM BOOKING</button>
+            <button onclick="hideBookingModal()" class="w-full py-5 border border-zinc-700 rounded-3xl">CANCEL</button>
         </div>
     </div>
 
     <script>
-        // Tailwind script already loaded via CDN
-        
-        function smoothScrollTo(sectionId) {
-            const element = document.getElementById(sectionId);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-        
-        // Mobile menu
-        const mobileBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        function toggleMobileMenu() {
-            mobileMenu.classList.add('hidden');
-        }
-        
-        // Booking modal
+        // Force top on load
+        window.onload = () => window.scrollTo(0, 0);
+
         const modal = document.getElementById('booking-modal');
         
         function showBookingModal() {
@@ -592,34 +251,20 @@
         }
         
         function submitBooking() {
-            const date = document.getElementById('modal-date').value;
-            alert(`Thank you! Your service request for ${date || 'soon'} has been received.\n\nWe'll call you shortly to confirm.`);
+            alert("Thank you! We'll contact you shortly to confirm your booking.");
             hideBookingModal();
         }
         
-        // Form submission
         function handleSubmit(e) {
             e.preventDefault();
-            alert("Thank you! Your message has been sent. We'll get back to you within the hour.");
-            document.getElementById('contact-form').reset();
+            alert("Thank you! Your message has been received. We'll reply soon.");
+            e.target.reset();
         }
         
-        // Close modal on escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === "Escape") {
-                if (!modal.classList.contains('hidden')) {
-                    hideBookingModal();
-                }
-            }
+        // Mobile menu (simple version)
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            alert("Call us at (817) 696-0349 for immediate service");
         });
-        
-        // Keyboard accessibility for services
-        console.log('%c✅ GearUp Mobile Mechanics website ready!', 'color: #3b82f6; font-size: 14px;');
-        
-        // Fake live clock for fun
-        setInterval(() => {
-            // No visual change needed
-        }, 30000);
     </script>
 </body>
 </html>
